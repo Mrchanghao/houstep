@@ -8,11 +8,17 @@
 #  디자인 가이드 
 
 background-color: #699dec
-color: #fff;
+color: #fff
+
+
 dust component seciton: #32568E 
 크로스 브라우징 유의
 비율 주의
 
 # USAGE 
 
-1. > git clone 
+```zsh
+git clone https://github.com/Mrchanghao/houstep.git
+
+yarn 
+```
