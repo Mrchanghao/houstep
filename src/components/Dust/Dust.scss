@@ -1,0 +1,164 @@
+@import '../../styles/mixin.scss';
+
+.dust-section {
+
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid #fff;
+    color: #32568e;
+    margin-bottom: 2em;
+    margin-left: 0.2em;
+    & p {
+      font-weight: lighter;
+      font-size: 0.7em;
+      color: #101111;
+      margin-bottom: 0.4em;
+    }
+    & h3 {
+      color: #fff;
+      font-size: 100%;
+    }
+    
+    &__pm10 {
+      max-width: 50%;
+      height: 30%;
+      margin-left: 4px;
+    }
+    &__pm10__one {
+      margin-top: 8px;
+    }
+
+    &__pm10__two {
+      margin-top: 8px;
+  
+    }
+    &__pm25 {
+      width: 50%;
+      height: 30%;
+      margin-left: 4px;
+      &__one {
+        margin-top: 8px;
+      }
+
+    
+
+
+    &__ozone {
+      width: 50%;
+      height: 30%;
+      margin-left: 4px;
+      
+    }
+
+    &__ozone__one {
+      margin-top: 8px;
+    }
+
+
+
+    &__nitrogen {
+      width: 50%;
+      height: 30%;
+      margin-bottom: 30px;
+      margin-left: 4px;
+    }
+
+    &__nitrogen__one {
+      margin-top: 8px;
+    }
+    &__two {
+      margin-top: 8px;
+      width: auto;
+      &__div {
+        display: flex;
+        justify-content: flex-start;
+        // width: 100%;
+      & img {
+        max-width: 20%;
+         margin-left: 20px;
+      }
+      & h3 {
+        max-width: 70%;
+        font-size: 200%;
+       
+      }
+      }
+    
+    }
+    
+  }
+}
+  
+  
+  
+
+
+@include respond('tabPort') {
+  .dust-section {
+    display: flex;
+    // grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    color: #32568e;
+    & p {
+      font-weight: lighter;
+      font-size: 0.9rem;
+      color: #101111;
+    }
+    & h3 {
+      color: #fff;
+      font-size: 200%;
+    }
+    &__two__div  {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      & img {
+        max-width: 20%;
+        max-height: 20%;
+      }
+      & h3 {
+        max-width: 50%;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@include respond('tabLand') { 
+  .dust-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    color: #32568e;
+    font-size: 100%;
+    & p {
+      font-weight: lighter;
+      font-size: 0.9rem;
+      color: #101111;
+    }
+    & h3 {
+      color: #fff;
+      font-size: 110%;
+    }
+    &__two__div  {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      margin-left: -1em;
+      & img {
+        max-width: 30%;
+        max-height: 30%;
+        margin-left: 20px;
+      }
+      & h3 {
+        max-width: auto;
+      }
+    }
+  }
+
+
+}

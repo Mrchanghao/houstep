@@ -1,0 +1,101 @@
+@import '../../styles/mixin.scss';
+
+section {
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  color: #fff;
+}
+
+.weather-section {
+  width: 100%;
+  color: #fff;
+  margin-top: -3.8em;
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  letter-spacing: 1.2px;
+  margin-bottom: 5rem;
+  &__city {
+    font-size: 400%;
+    
+  }
+
+  &__weather {
+    font-size: 200%;
+  }
+  &__icon {
+    animation: infiniteMove 3s infinite cubic-bezier(.31,.27,.31,.29);
+  }
+
+  &__temp {
+    font-size: 200%;
+    font-weight: lighter;
+  }
+  
+  .weather-section__date {
+    margin-top: 4rem;
+  }
+  @include respond('tabPort') {
+    .weather-section {
+      width: 100%;
+      color: #fff;
+      margin-top: -3.8em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      flex-direction: column;
+      letter-spacing: 1.2px;
+      margin-bottom: 5rem;
+      &__city {
+        font-size: 200%;
+        margin-top: 1em;
+    
+      }
+    }
+  }
+
+  @include respond('tabLand') {
+    .weather-section {
+      width: 100%;
+      color: #fff;
+      margin-top: -3.8em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      flex-direction: column;
+      letter-spacing: 1.2px;
+      margin-bottom: 5rem;
+      &__city {
+        font-size: 400%;
+        margin-top: 1em;
+      }
+      &__temp {
+        font-size: 200%;
+        font-weight: lighter;
+      }
+    }
+  }
+
+  
+}
+
+
+@keyframes infiniteMove {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-8%);
+  }
+  50% {
+    transform: translateX(8%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

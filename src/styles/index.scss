@@ -1,0 +1,26 @@
+@import './mixin.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem === 10px;
+
+  @include respond('phone') {
+    font-size: 1.1rem;
+  }
+
+  @include respond('tabPort') {
+    font-size: 1.1rem;
+  }
+
+  @include respond('tabLand') {
+    font-size: 1.1rem;
+  }
+
+  @include respond('deskTop') {
+    font-size: 100%;
+  }
+}
+
