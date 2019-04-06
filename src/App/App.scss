@@ -1,4 +1,4 @@
-@import '../styles/mixin.scss';
+@import '../styles/__mixin.scss';
 
 
 .app-section {
@@ -6,19 +6,9 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  position: relative;
   align-items: center;
   flex-direction: column;
   background-color: #699dec;
   
-  @include respond('tabPort') {
-    
-  }
-
-  @include respond('tabLand') {
-    
-  }
-
-  @include respond('deskTop') {
-    
-  }
 }

@@ -7,9 +7,11 @@ const Dust = ({pm10, pm25, ozone, nitrogen}) => {
 
   const renderWithProps = (props) => {
     return (
-        <div className={`dust-section__two`}>
-            <div className={`dust-section__two__div`}>
-            <img src={icon} alt='quantity icon' />
+        <div className='dust-section__item__two'>
+            <div className='dust-section__item__two__div'>
+            <div className='dust-section__item__two__div__wrapper'>
+              <img src={icon} alt='quantity icon' />
+            </div>
             <h3>{props}</h3>
             </div>
         </div>
@@ -19,30 +21,30 @@ const Dust = ({pm10, pm25, ozone, nitrogen}) => {
     return (
       <>
         <section className='dust-section'>
-        <div className='dust-section__pm10'>
-          <div className='dust-section__pm10__one'>
-            <p>미세먼지</p>
+        <div className='dust-section__item'>
+          <div className='dust-section__item__one'>
+            <label>미세먼지</label>
           </div>
           {renderWithProps(pm10)}
         </div>
 
-        <div className='dust-section__pm25'>
-          <div className='dust-section__pm25__one'>
-            <p>초미세먼지</p>
+        <div className='dust-section__item'>
+          <div className='dust-section__item__one'>
+            <label>초미세먼지</label>
           </div>
           {renderWithProps(pm25)}
         </div>
 
-        <div className='dust-section__ozone'>
-          <div className='dust-section__ozone__one'>
-            <p>오존</p>
+        <div className='dust-section__item'>
+          <div className='dust-section__item__one'>
+            <label>오존</label>
           </div>
           {renderWithProps(ozone)}
         </div>
 
-        <div className='dust-section__nitrogen'>
-          <div className='dust-section__nitrogen__one'>
-            <p>이산화질소</p>
+        <div className='dust-section__item'>
+          <div className='dust-section__item__one'>
+            <label>이산화질소</label>
           </div>
           {renderWithProps(nitrogen)}
         </div>

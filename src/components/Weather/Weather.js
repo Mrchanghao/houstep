@@ -9,7 +9,7 @@ const Weather = (props) => {
     const {city, temp, weather, icon} = props;
     const getDate = getMoment(props.date);
     return (
-      <section>
+      <section className='weather'>
         <div className='weather-section'>
         <div className='weather-section__city'>
           <h1>{city}</h1>

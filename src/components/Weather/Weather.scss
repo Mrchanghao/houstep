@@ -1,16 +1,17 @@
-@import '../../styles/mixin.scss';
+@import '../../styles/__mixin.scss';
 
-section {
+.weather  {
   border-bottom: 1px solid #fff;
   width: 100%;
   color: #fff;
+  height: 60%;
+  font-size: 1em;
 }
 
 .weather-section {
   width: 100%;
   color: #fff;
   margin-top: -3.8em;
-    
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,67 +21,32 @@ section {
   margin-bottom: 5rem;
   &__city {
     font-size: 400%;
-    
+    margin-top: 0.7em;
+    margin-bottom: 0.3em;
   }
 
   &__weather {
-    font-size: 200%;
+    font-size: 300%;
+    margin-bottom: 0.4em;
   }
   &__icon {
     animation: infiniteMove 3s infinite cubic-bezier(.31,.27,.31,.29);
+    margin-bottom: 0.4em;
   }
 
   &__temp {
-    font-size: 200%;
-    font-weight: lighter;
+    font-size: 300%;
+    font-weight: normal;
+    margin-bottom: 0.4em;
   }
   
-  .weather-section__date {
-    margin-top: 4rem;
-  }
-  @include respond('tabPort') {
-    .weather-section {
-      width: 100%;
-      color: #fff;
-      margin-top: -3.8em;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      flex-direction: column;
-      letter-spacing: 1.2px;
-      margin-bottom: 5rem;
-      &__city {
-        font-size: 200%;
-        margin-top: 1em;
-    
-      }
+  &__date {
+      margin-top: 4em;
+      position: absolute;
+      bottom: 30%;
     }
-  }
-
-  @include respond('tabLand') {
-    .weather-section {
-      width: 100%;
-      color: #fff;
-      margin-top: -3.8em;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      flex-direction: column;
-      letter-spacing: 1.2px;
-      margin-bottom: 5rem;
-      &__city {
-        font-size: 400%;
-        margin-top: 1em;
-      }
-      &__temp {
-        font-size: 200%;
-        font-weight: lighter;
-      }
-    }
-  }
-
+  
+  
   
 }
 
