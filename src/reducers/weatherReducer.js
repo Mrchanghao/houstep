@@ -23,10 +23,10 @@ const weatherReducer = (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        weather: action.payload['weather'][0].description,
+        weather: action.payload['weather'][0].main,
         city: action.payload.name,
         temp: action.payload['main'].temp,
-        icon: getIcon(action.payload['weather'][0].description)
+        icon: getIcon(action.payload['weather'][0].main)
       }
     case FETCH_WEATHER_FAIL:
       return {

@@ -46,21 +46,25 @@ export const getTemp = (temp) => {
 export const getIcon = (weather) => {
   let icon;
   switch(weather) {
-    case '맑음':
+    case 'Clear':
       icon = sun;
       break;
-    case '안개':
+    case 'Haze':
       icon = mist;
       break;
-    case '눈':
+    case 'Snow':
       icon = snow;
       break;
-    case '비':
+    case 'Rain':
       icon = rain;
       break;
-    case '연무':
+    case 'Drizzle':
+      icon = rain;
+      break;
+    case "Clouds":
       icon = cloud;
       break;
+    
     default:
       icon = null;
   }
