@@ -49,16 +49,13 @@ export const getIcon = (weather) => {
     case 'Clear':
       icon = sun;
       break;
-    case 'Haze':
+    case ('Haze' || 'Mist'):
       icon = mist;
       break;
     case 'Snow':
       icon = snow;
       break;
-    case 'Rain':
-      icon = rain;
-      break;
-    case 'Drizzle':
+    case ('Rain' || 'Drizzle'):
       icon = rain;
       break;
     case "Clouds":
@@ -66,7 +63,7 @@ export const getIcon = (weather) => {
       break;
     
     default:
-      icon = null;
+      icon = sun;
   }
   return icon;
 }

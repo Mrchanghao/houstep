@@ -8,6 +8,7 @@
   font-size: 62.5%; // 1rem === 10px;
 
 
+
   @include respond('tabPort') {
     font-size: 1.1rem;
   }
@@ -21,3 +22,6 @@
   }
 }
 
+body, html {
+  height: 100%;
+}

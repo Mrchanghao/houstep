@@ -14,6 +14,8 @@ class App extends Component {
     date: new Date()
   }
 
+  
+
   componentDidMount() {
     this.props.fetchWeather();
     this.props.fetchDust();

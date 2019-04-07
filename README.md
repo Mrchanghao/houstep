@@ -20,5 +20,5 @@ dust component seciton: #32568E
 ```zsh
 git clone https://github.com/Mrchanghao/houstep.git
 
-yarn 
+yarn or npm install
 ```
